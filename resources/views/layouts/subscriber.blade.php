@@ -56,7 +56,7 @@
                         <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                     @else
-                        <li><a class="nav-link" href="{{ route('subscription.show') }}">Subscription</a></li>
+                        <li><a class="nav-link" href="#">Subscription</a></li>
 
 
                         <li class="nav-item dropdown">

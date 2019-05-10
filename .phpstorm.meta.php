@@ -5,7 +5,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2019-05-06 23:46:32.
+    * Generated on 2019-05-10 00:16:14.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -144,6 +144,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -288,6 +290,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -432,6 +436,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -576,6 +582,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -720,6 +728,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -864,6 +874,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
@@ -1008,6 +1020,8 @@ namespace PHPSTORM_META {
         'router' => \Illuminate\Routing\Router::class,
         'session' => \Illuminate\Session\SessionManager::class,
         'session.store' => \Illuminate\Session\Store::class,
+        'stripe' => \Cartalyst\Stripe\Stripe::class,
+        'stripe.config' => \Cartalyst\Stripe\Config::class,
         'swift.mailer' => \Swift_Mailer::class,
         'swift.transport' => \Illuminate\Mail\TransportManager::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
