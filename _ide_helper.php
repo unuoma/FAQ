@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.15 on 2019-05-06 23:46:30.
+ * Generated for Laravel 5.8.16 on 2019-05-10 00:16:12.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -11470,7 +11470,6 @@ namespace Illuminate\Support\Facades {
     /**
      * 
      *
-     * @method static void registerCustomDBALType(string $class, string $name, string $type)
      * @see \Illuminate\Database\Schema\Builder
      */ 
     class Schema {
@@ -11653,6 +11652,20 @@ namespace Illuminate\Support\Facades {
             //Method inherited from \Illuminate\Database\Schema\Builder            
                         /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
                         $instance->dropIfExists($table);
+        }
+        
+        /**
+         * Drop all types from the database.
+         *
+         * @return void 
+         * @throws \LogicException
+         * @static 
+         */ 
+        public static function dropAllTypes()
+        {
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+                        /** @var \Illuminate\Database\Schema\SQLiteBuilder $instance */
+                        $instance->dropAllTypes();
         }
         
         /**
@@ -14527,6 +14540,199 @@ namespace Illuminate\Support {
      *
      */ 
     class Str {
+         
+    }
+ 
+}
+
+namespace Cartalyst\Stripe\Laravel\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class Stripe {
+        
+        /**
+         * Create a new Stripe API instance.
+         *
+         * @param string $apiKey
+         * @param string $apiVersion
+         * @return \Cartalyst\Stripe\Stripe 
+         * @static 
+         */ 
+        public static function make($apiKey = null, $apiVersion = null)
+        {
+                        return \Cartalyst\Stripe\Stripe::make($apiKey, $apiVersion);
+        }
+        
+        /**
+         * Returns the current package version.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getVersion()
+        {
+                        return \Cartalyst\Stripe\Stripe::getVersion();
+        }
+        
+        /**
+         * Returns the Config repository instance.
+         *
+         * @return \Cartalyst\Stripe\ConfigInterface 
+         * @static 
+         */ 
+        public static function getConfig()
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->getConfig();
+        }
+        
+        /**
+         * Sets the Config repository instance.
+         *
+         * @param \Cartalyst\Stripe\ConfigInterface $config
+         * @return \Cartalyst\Stripe\Stripe 
+         * @static 
+         */ 
+        public static function setConfig($config)
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->setConfig($config);
+        }
+        
+        /**
+         * Returns the Stripe API key.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getApiKey()
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->getApiKey();
+        }
+        
+        /**
+         * Sets the Stripe API key.
+         *
+         * @param string $apiKey
+         * @return \Cartalyst\Stripe\Stripe 
+         * @static 
+         */ 
+        public static function setApiKey($apiKey)
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->setApiKey($apiKey);
+        }
+        
+        /**
+         * Returns the Stripe API version.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getApiVersion()
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->getApiVersion();
+        }
+        
+        /**
+         * Sets the Stripe API version.
+         *
+         * @param string $apiVersion
+         * @return \Cartalyst\Stripe\Stripe 
+         * @static 
+         */ 
+        public static function setApiVersion($apiVersion)
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->setApiVersion($apiVersion);
+        }
+        
+        /**
+         * Sets the idempotency key.
+         *
+         * @param string $idempotencyKey
+         * @return \Cartalyst\Stripe\Stripe 
+         * @static 
+         */ 
+        public static function idempotent($idempotencyKey)
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->idempotent($idempotencyKey);
+        }
+        
+        /**
+         * Sets the account id.
+         *
+         * @param string $accountId
+         * @return \Cartalyst\Stripe\Stripe 
+         * @static 
+         */ 
+        public static function accountId($accountId)
+        {
+                        /** @var \Cartalyst\Stripe\Stripe $instance */
+                        return $instance->accountId($accountId);
+        }
+        
+        /**
+         * Returns the amount converter class and method name.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getAmountConverter()
+        {
+                        return \Cartalyst\Stripe\Stripe::getAmountConverter();
+        }
+        
+        /**
+         * Sets the amount converter class and method name.
+         *
+         * @param $amountConverter string
+         * @return void 
+         * @static 
+         */ 
+        public static function setAmountConverter($amountConverter)
+        {
+                        \Cartalyst\Stripe\Stripe::setAmountConverter($amountConverter);
+        }
+        
+        /**
+         * Disables the amount converter.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function disableAmountConverter()
+        {
+                        \Cartalyst\Stripe\Stripe::disableAmountConverter();
+        }
+        
+        /**
+         * Returns the default amount converter.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getDefaultAmountConverter()
+        {
+                        return \Cartalyst\Stripe\Stripe::getDefaultAmountConverter();
+        }
+        
+        /**
+         * Sets the default amount converter;
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function setDefaultAmountConverter()
+        {
+                        \Cartalyst\Stripe\Stripe::setDefaultAmountConverter();
+        }
          
     }
  
@@ -18372,6 +18578,8 @@ namespace  {
     class Validator extends \Illuminate\Support\Facades\Validator {}
 
     class View extends \Illuminate\Support\Facades\View {}
+
+    class Stripe extends \Cartalyst\Stripe\Laravel\Facades\Stripe {}
 
     class Form extends \Collective\Html\FormFacade {}
 

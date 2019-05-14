@@ -18,6 +18,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/Subscription', 'SubscriptionController@show')->name('subscription.show');
+
+
+Route::get('/charge', 'ChargeController@index')->name('Charge.index');
+
+
+Route::post('/charge', 'ChargeController@charge')->name('Charge.charge');
+
+
 
 Route::get('/user/{user_id}/profile', 'ProfileController@create')->name('profile.create');
 Route::get('/user/{user_id}/profile/{profile_id}', 'ProfileController@show')->name('profile.show');
@@ -36,4 +45,5 @@ Route::delete('/questions/{question_id}/answer/{answer_id}', 'AnswerController@d
 
 Route::resources([
     'questions' => 'QuestionController',
+
 ]);
