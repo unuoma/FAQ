@@ -79,7 +79,7 @@ class ChargeController extends Controller
                 return redirect()->route('home');
             }
         }
-        return redirect()->route('home')->with('message', 'Successfully subscribed. Look out for emails');
+        return redirect()->route('home')->with('message', 'Successfully subscribed. Enjoy!');
 
     }
 
